@@ -1,4 +1,4 @@
-document.getElementById("memeButton").addEventListener("click", fetchMeme);
+document.getElementById("meme_button").addEventListener("click", fetchMeme);
 
 async function fetchMeme() {
   const meme_container = document.getElementById("meme");
@@ -36,6 +36,6 @@ async function fetchMeme() {
   } catch (error) {
     console.error("Error Fetching meme:", error);
     meme_container.innerHTML =
-      "<p>Sorry! If you want to, check the console for errors (DM if you have suggestions for a fix).";
+      "<p>Sorry! If you want to, check the console for errors (open an issue or smth if you have suggestions for a fix).";
   }
 }
